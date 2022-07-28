@@ -8,6 +8,7 @@ SELECT COUNT("endDate") as "currentExperiences" FROM experiences;
 
 SELECT educations."userId" as id, COUNT("userId") as educations 
 FROM educations 
+WHERE educations.status = 'finished' 
 GROUP BY "userId";
 
 
